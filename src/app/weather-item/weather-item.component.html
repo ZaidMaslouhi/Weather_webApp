@@ -1,0 +1,35 @@
+<style>
+article{
+    border-radius: 8px;
+    box-shadow: 0 0 8px 1px #ececec;
+}
+h3, .temprature{
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+}
+</style>
+
+
+<side-bar></side-bar>
+
+
+<section class="d-inline-block mt-4 w-75">
+    <div class="w-50 mx-auto">
+        <weather-search></weather-search>
+        <article *ngFor="let weatherItem of weatherItems" class="mb-3 py-3 px-3">
+            <div class="row">
+            <div class="col-6 d-inline-block">
+                <h3 class="mb-2">{{ weatherItem.city }}</h3>
+                <p class="info text-secondary">{{ weatherItem.description }}</p>
+            </div>
+            <div class="col-6 text-right align-top">
+                <span class="temprature">{{ weatherItem.temprature }}°C</span>
+            </div>
+        </div>
+        </article>
+    </div>
+</section>
+
+<!-- <button class="btn btn-danger" (click)="testOf()"> test Of Rxjs</button>    <br>
+<button class="btn btn-warning" (click)="testIntervalTake()"> test Interval & Take Rxjs</button> -->

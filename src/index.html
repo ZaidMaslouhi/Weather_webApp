@@ -6,10 +6,30 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+      *{
+      padding:0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      }
+      header{
+        height: 150px;
+        background: #333;
+      }
+      header h3{
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        line-height: 2.5 !important;
+      }
+</style>
 </head>
 <body>
+  <header>
+    <h3 class="display-4">Weather App with Angular 8</h3>
+  </header>
   <!-- <app-root></app-root> -->
-  TATATA TA TOYOR TOYOR TRRRRRRRRRR
+  <weather-item></weather-item>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/7.6.0/firebase-app.js"></script>
